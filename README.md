@@ -1,2 +1,2 @@
 # Java programming
-Here are my Java programms.
+Here are my Java programs.
