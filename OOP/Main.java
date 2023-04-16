@@ -1,3 +1,5 @@
+import my_package.*;
+
 public class Main {
   public static void main (String[] args) {
     Person alex = new Person();
