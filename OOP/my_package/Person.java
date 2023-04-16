@@ -2,12 +2,61 @@ package my_package;
 
 public class Person {
 
-  public String name;
-  public int age;
-  public double height;
-  public double weight;
-  
+  private String name;
+  private int age;
+  private double height;
+  private double weight;
 
+
+  /* getters */
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public double getHeight() {
+    return height;
+  }
+
+  public double getWeight() {
+    return weight;
+  }
+
+
+  /* setters */
+  public void setName(String newName) {
+    name = newName;
+  }
+
+  public void setAge(int newAge) {
+    if (newAge >= 0 && newAge < 125) {
+	  age = newAge;
+	} else {
+	  System.out.println("Error: invalid age value.");
+	}
+  }
+
+  public void setHeight(double newHeight) {
+    if (newHeight >= 0 && newHeight < 3.1) {
+	  height = newHeight;
+	} else {
+	  System.out.println("Error: invalid height value.");
+	}
+  }
+
+  public void setWeight(double newWeight) {
+    if (newWeight >= 0 && newWeight < 650) {
+	  weight = newWeight;
+	} else {
+	  System.out.println("Error: invalid weight value.");
+	}
+  }
+
+
+  /* class methods */
   public void greetings() {
     System.out.printf("Hello, my name is %s.\n", name);
   }
