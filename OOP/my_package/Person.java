@@ -33,26 +33,26 @@ public class Person {
 
   public void setAge(int newAge) {
     if (newAge >= 0 && newAge < 125) {
-	  age = newAge;
-	} else {
-	  System.out.println("Error: invalid age value.");
-	}
+      age = newAge;
+    } else {
+      System.out.println("Error: invalid age value.");
+    }
   }
 
   public void setHeight(double newHeight) {
     if (newHeight >= 0 && newHeight < 3.1) {
-	  height = newHeight;
-	} else {
-	  System.out.println("Error: invalid height value.");
-	}
+      height = newHeight;
+    } else {
+      System.out.println("Error: invalid height value.");
+    }
   }
 
   public void setWeight(double newWeight) {
     if (newWeight >= 0 && newWeight < 650) {
-	  weight = newWeight;
-	} else {
-	  System.out.println("Error: invalid weight value.");
-	}
+      weight = newWeight;
+    } else {
+      System.out.println("Error: invalid weight value.");
+    }
   }
 
 

@@ -7,7 +7,6 @@
 #  bash w.sh *.java
 
 
-
 set -e 
 javac $@
 # execute the program
