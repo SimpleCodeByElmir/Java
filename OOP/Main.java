@@ -19,10 +19,14 @@ public class Main {
 	
 	
     System.out.print("\n\n\n##############################################\n\n## Cars\n");
+
     Car cheap = new Car();                           // constructor 1
-    System.out.printf("\n#object 1:\n%s\n%f\n", cheap.name, cheap.price);
+    System.out.printf("\n*object #1, constructor #1:\n%s\n%f\n", cheap.name, cheap.price);
     
     Car expensive = new Car("Mercedes", 5000);       // constructor 2
-    System.out.printf("\n#object 2:\n%s\n%.2f\n", expensive.name, expensive.price);
+    System.out.printf("\n*object #2, constructor #2:\n%s\n%.2f\n", expensive.name, expensive.price);
+
+    Car nice = new Car("Skoda");                     // constructor 3
+    System.out.printf("\n*object #3, constructor #3:\n%s\n%.2f\n", nice.name, nice.price);
   }
 }
