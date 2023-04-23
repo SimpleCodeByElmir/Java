@@ -6,7 +6,12 @@ public class Person {
   private int age;
   private double height;
   private double weight;
+  private int id;
+  public static int counter = 1;
 
+  public Person() {
+    id = counter++;
+  }
 
   /* getters */
   public String getName() {
@@ -23,6 +28,9 @@ public class Person {
 
   public double getWeight() {
     return weight;
+  }
+  public int getId() {
+    return id;
   }
 
 
@@ -56,7 +64,7 @@ public class Person {
   }
 
 
-  /* class methods */
+  /* methods */
   public void greetings() {
     System.out.printf("Hello, my name is %s.\n", name);
   }

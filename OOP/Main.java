@@ -3,6 +3,7 @@ import my_package.*;
 public class Main {
   public static void main (String[] args) {
 
+    // Alex, id = 1
     Person alex = new Person();
 
     alex.setName("Alesandro");
@@ -10,14 +11,21 @@ public class Main {
     alex.setHeight(1.75);
     alex.setWeight(55.2);
 
+    System.out.printf("*Created Person page with ID: %d\n\n", alex.getId());
     alex.greetings();
     alex.talking();
     alex.goodbye();
 
-    System.out.printf("\n# Summary\nname: %s\nage: %d\nheight: %f\nweight: %f\n", alex.getName(), alex.getAge(), alex.getHeight(), alex.getWeight());
+    System.out.printf("\n# Summary\nID: %d\nname: %s\nage: %d\nheight: %f\nweight: %f\n", alex.getId(), alex.getName(), alex.getAge(), alex.getHeight(), alex.getWeight());
 	
+    // Arthur, id = 2
+    Person arthur = new Person();
+    arthur.setName("Arthur");
+    System.out.printf("\n\n*Created Person page with ID: %d\n\n# Summary\nID: %d\nname: %s\nage: %d\nheight: %f\nweight: %f\n", arthur.getId(), arthur.getId(), arthur.getName(), arthur.getAge(), arthur.getHeight(), arthur.getWeight());
+
+    System.out.printf("\n\nFollowing Person ID will be: %d\n", Person.counter);
 	
-	
+
     System.out.print("\n\n\n##############################################\n\n## Cars\n");
 
     Car cheap = new Car();                           // constructor 1
