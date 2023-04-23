@@ -4,7 +4,14 @@ public class Car {
 
   public String name;
   public double price;
+  public String dealer;
 
+  // initializer
+  {
+    dealer = "Shepard-Auto";
+  }
+
+  // constructors
   public Car() {                                    // constructor #1 - without parameters
     name = "Undefined";
     price = 0.999;
@@ -18,7 +25,8 @@ public class Car {
     price = 1000;
   }
   
-  public void getCarName() {
-    System.out.println(name);
+  // methods
+  public void getCarInfo() {
+    System.out.printf("\n%s\n%s\n%s\n", name, price, dealer);
   }
 }
