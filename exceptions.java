@@ -4,8 +4,8 @@ public class exceptions {
     int my_array[] = new int[5];
     
     try {
-      //my_array[6] = 6;
-      //my_array[6] = Integer.parseInt("gfd");
+      //my_array[6] = 6;                          // ArrayIndexOutOfBoundsException ex
+      //my_array[6] = Integer.parseInt("gfd");    // NumberFormatException ex
       my_array[0] = 11;
       if (my_array[0] > 10) {
         throw new Exception("Throwing exception: my_array[0] > 10.");

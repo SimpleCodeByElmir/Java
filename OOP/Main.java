@@ -23,8 +23,10 @@ public class Main {
     arthur.setName("Arthur");
     System.out.printf("\n\n*Created Person page with ID: %d\n\n# Summary\nID: %d\nname: %s\nage: %d\nheight: %f\nweight: %f\n", arthur.getId(), arthur.getId(), arthur.getName(), arthur.getAge(), arthur.getHeight(), arthur.getWeight());
 
-    System.out.printf("\n\nFollowing Person ID will be: %d\n", Person.counter);
-	
+    System.out.printf("\n\nFollowing Person ID will be: ");
+    Person.getCounter();                   // static method, that can be called without creating any object
+
+
 
     System.out.print("\n\n\n##############################################\n\n## Cars\n");
 

@@ -7,7 +7,7 @@ public class Person {
   private double height;
   private double weight;
   private int id;
-  public static int counter = 1;
+  private static int counter = 1;
 
   public Person() {
     id = counter++;
@@ -31,6 +31,9 @@ public class Person {
   }
   public int getId() {
     return id;
+  }
+  public static void getCounter() {
+    System.out.println(counter);
   }
 
 
