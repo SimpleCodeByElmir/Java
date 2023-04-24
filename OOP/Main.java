@@ -3,6 +3,7 @@ import my_package.*;
 public class Main {
   public static void main (String[] args) {
 
+    // using class Person from my_package/Person.java
     // Alex, id = 1
     Person alex = new Person();
 
@@ -26,8 +27,9 @@ public class Main {
     System.out.printf("\n\nFollowing Person ID will be: ");
     Person.getCounter();                   // static method, that can be called without creating any object
 
+	
 
-
+    //using class Car from my_package/Car.java 
     System.out.print("\n\n\n##############################################\n\n## Cars\n");
 
     Car cheap = new Car();                           // constructor 1

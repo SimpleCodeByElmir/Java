@@ -9,5 +9,6 @@
 
 set -e 
 javac $@
+
 # execute the program
-java Main
+#java Main
