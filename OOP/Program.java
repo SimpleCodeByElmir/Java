@@ -11,6 +11,19 @@ public class Program {
 
     changeObject(A);
     System.out.println(A.getCountry());
+    
+    
+    /* Inheritance realization */
+    
+    // Superclass
+    Person oleg = new Person();
+    oleg.setName("Oleg");
+    System.out.printf("\n%s\n", oleg.getName());
+    
+    //Subclass    (calls the counstructor of the class Person)
+    Inheritance ivan = new Inheritance();
+    ivan.setName("Ivan");
+    System.out.printf("\n%s\n", ivan.getName());
   }
 
   static void changeCountry (Objects obj) {
