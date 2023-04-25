@@ -46,7 +46,8 @@ public class Person {
     if (newAge >= 0 && newAge < 125) {
       age = newAge;
     } else {
-      System.out.println("Error: invalid age value.");
+      do_print("Error: invalid age value.");
+      System.exit(0);
     }
   }
 
@@ -54,7 +55,8 @@ public class Person {
     if (newHeight >= 0 && newHeight < 3.1) {
       height = newHeight;
     } else {
-      System.out.println("Error: invalid height value.");
+      do_print("Error: invalid height value.");
+      System.exit(0);
     }
   }
 
@@ -62,21 +64,26 @@ public class Person {
     if (newWeight >= 0 && newWeight < 650) {
       weight = newWeight;
     } else {
-      System.out.println("Error: invalid weight value.");
+      do_print("Error: invalid weight value.");
+      System.exit(0);
     }
   }
 
 
   /* methods */
   public void greetings() {
-    System.out.printf("Hello, my name is %s.\n", name);
+    do_print("Hello, my name is " + name + ".");
   }
 
   public void talking() {
-    System.out.println("I'am " + age + " years old. I like to ride a bike. And just so You to know my height is " + height + " and my weight is " + weight + " kilograms.");
+    do_print("I'am " + age + " years old. I like to ride a bike. And just so You to know my height is " + height + " and my weight is " + weight + " kilograms.");
   }
 
   public void goodbye() {
-    System.out.println("Nice to meet You! Goodbye!");
+    do_print("Nice to meet You! Goodbye!");
+  }
+  
+  private void do_print(String str) {
+    System.out.println(str);
   }
 }
