@@ -83,7 +83,11 @@ public class Person {
     do_print("Nice to meet You! Goodbye!");
   }
   
-  private void do_print(String str) {
+  public double HeightWeightSum() {
+    return height+weight;
+  }
+  
+  protected void do_print(String str) {
     System.out.println(str);
   }
 }

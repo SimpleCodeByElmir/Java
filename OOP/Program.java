@@ -21,9 +21,13 @@ public class Program {
     System.out.printf("\n%s\n", oleg.getName());
     
     // Subclass
-    Inheritance ivan = new Inheritance();
+    Student ivan = new Student();
     ivan.setName("Ivan");
-    System.out.printf("\n%s\n", ivan.getName());
+    System.out.printf("\n%s\n\n", ivan.getName());
+    
+    ivan.setHeight(1.8);
+    ivan.setWeight(68.2);
+    ivan.greetings();              // calling overrode, by Subclass, method
   }
 
   // methods with parameters of type Object of a Class 
